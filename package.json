@@ -1,0 +1,31 @@
+{
+  "name": "node-crud-api",
+  "version": "1.0.0",
+  "description": "CRUD API for Product Catalog using Fastify",
+  "type": "module",
+  "engines": {
+    "node": ">=24.10.0",
+    "npm": ">=10.9.2"
+  },
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start:prod": "tsup && node dist/server.js",
+    "start:multi": "tsx src/cluster.ts",
+    "test": "vitest run"
+  },
+  "keywords": ["crud", "api", "fastify", "typescript"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "cross-env": "^7.0.3",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
